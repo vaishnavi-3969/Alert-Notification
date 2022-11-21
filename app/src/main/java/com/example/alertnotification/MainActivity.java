@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.messageicon) //set icon for notification
                         .setContentTitle("New Notification") //set title of notification
-                        .setContentText("Time for medicine!!")//this is notification message
+                        .setContentText("New Message")//this is notification message
                         .setAutoCancel(true) // makes auto cancel of notification
                         .setPriority(NotificationCompat.PRIORITY_DEFAULT); //set priority of notification
 
