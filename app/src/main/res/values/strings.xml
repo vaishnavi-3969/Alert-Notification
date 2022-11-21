@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Alert Notification</string>
+    <string name="type_here">Type here</string>
+    <string name="notify">Notify</string>
+    <string name="message">Message</string>
+</resources>
