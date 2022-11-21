@@ -29,15 +29,10 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.button);
         message = findViewById(R.id.message);
 
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
-            NotificationChannel channel = new NotificationChannel("Notification", "Notification", NotificationManager.IMPORTANCE_DEFAULT);
-            NotificationManager manager=getSystemService(NotificationManager.class);
-            manager.createNotificationChannel(channel);
-        }
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 NotificationCompat.Builder builder=(NotificationCompat.Builder)
                         new NotificationCompat.Builder(MainActivity.this,"Notification");
                 builder.setContentTitle("New Message");
@@ -52,7 +47,12 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
-
+//==================
+//if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.O){
+//        NotificationChannel channel = new NotificationChannel("Notification", "Notification", NotificationManager.IMPORTANCE_DEFAULT);
+//        NotificationManager manager=getSystemService(NotificationManager.class);
+//        manager.createNotificationChannel(channel);
+//        }
 //=========================
 //public class MainActivity extends AppCompatActivity {
 //    Button notify;
